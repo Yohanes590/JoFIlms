@@ -1,0 +1,3 @@
+parallax // for smooth scrolling
+react-slick  // for sliding elements
+react-simple-typewriter  // for typewriter effect
