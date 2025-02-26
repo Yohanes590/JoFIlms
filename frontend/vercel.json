@@ -1,0 +1,51 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "package.json",
+        "use": "@vercel/static-build",
+        "config": {
+          "distDir": "dist"
+        }
+      }
+    ],
+    "routes": [
+      {
+        "src": "/",
+        "dest": "/index.html"
+      },
+      {
+        "src": "/sign-up",
+        "dest": "/index.html"
+      },
+      {
+        "src": "/sign-in",
+        "dest": "/index.html"
+      },
+      {
+        "src": "/detail",
+        "dest": "/index.html"
+      },
+      {
+        "src": "/user-option/tv-show",
+        "dest": "/index.html"
+      },
+      {
+        "src": "/user-option/movie",
+        "dest": "/index.html"
+      },
+      {
+        "src": "/user-option/upcoming",
+        "dest": "/index.html"
+      },
+      {
+        "src": "/user-option/live-show",
+        "dest": "/index.html"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/index.html"
+      }
+    ]
+  }
+  
