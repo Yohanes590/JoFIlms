@@ -101,6 +101,31 @@ server.post("/login-certificate",async(req,res)=>{
     }
 })
 
+server.post("/check-account",(req,res)=>{
+    try{
+        const access_token = req.body.token;
+        const decodeToken = jwt.decode(access_token)
+        if(decodeToken){
+            res.json({status:200,email:decodeToken.check.email})
+        }else{
+            res.json({status:500,message:"cant decode"})
+        }
+
+    }catch(error){
+        res.json({message:error.message})
+    }
+})
+
+
+server.post("/delete-account",async(req,res)=>{
+    try {
+        await createUserInfo.findOneAndDelete({email:req.body.email})
+        res.json({status:200,message:"delete success"})
+    } catch (error) {
+        res.json({status:500,message:"Something Went Wrong"})
+    }
+})
+
 mongoose.connect("mongodb://jplussince34:N12B6l0Q6lANu8cm@users-shard-00-00.0wu0w.mongodb.net:27017,users-shard-00-01.0wu0w.mongodb.net:27017,users-shard-00-02.0wu0w.mongodb.net:27017/user-info?ssl=true&replicaSet=atlas-2leybj-shard-0&authSource=admin&retryWrites=true&w=majority&appName=Users")
 .then(()=>{
     console.log("Database Connect Success")
