@@ -8,7 +8,7 @@ const bcrypt = require("bcrypt")
 require("dotenv").config()
 
 server.use(cors({
-    origin:"https://jo-films.vercel.app/"
+    origin:"https://jo-films.vercel.app"
 }))
 
 server.use(express.urlencoded({extended:false}))
