@@ -8,7 +8,7 @@ const bcrypt = require("bcrypt")
 require("dotenv").config()
 
 server.use(cors({
-    origin:"http://localhost:5173"
+    origin:"https://jo-films.vercel.app/"
 }))
 
 server.use(express.urlencoded({extended:false}))
@@ -126,7 +126,7 @@ server.post("/delete-account",async(req,res)=>{
     }
 })
 
-mongoose.connect("mongodb://jplussince34:N12B6l0Q6lANu8cm@users-shard-00-00.0wu0w.mongodb.net:27017,users-shard-00-01.0wu0w.mongodb.net:27017,users-shard-00-02.0wu0w.mongodb.net:27017/user-info?ssl=true&replicaSet=atlas-2leybj-shard-0&authSource=admin&retryWrites=true&w=majority&appName=Users")
+mongoose.connect(process.env.DB_CONNECTION)
 .then(()=>{
     console.log("Database Connect Success")
 }).catch((error)=>{
