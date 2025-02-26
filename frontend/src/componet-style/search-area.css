@@ -1,0 +1,267 @@
+.search-around {
+    width: 100%;
+    height: 100vh;
+}
+
+.search-nav-bar {
+    width: 100%;
+    height: 60px;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+}
+
+.search-nav-bar .search-box input {
+    border: none;
+    background: none;
+    outline: none;
+    color: white;
+    width: 600px;
+    margin-left: 10px;
+}
+
+.search-nav-bar .search-box input::placeholder {
+    color: var(--text-primary);
+}
+
+.search-nav-bar .search-box {
+    border: 2px solid var(--muted-dark);
+    padding-left: 10px;
+    width: 600px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    background-color: var(--muted-dark);
+    overflow: hidden;
+}
+
+.search-nav-bar .search-box .search-icon {
+    margin-top: 5px;
+}
+
+.search-nav-bar .search-box button {
+    width: 100px;
+    height: 40px;
+    border: 2px solid var(--gray-borders);
+    background: var(--gray-borders);
+    color: var(--text-primary);
+    cursor: pointer;
+}
+
+.search-nav-bar .clint-buttons {
+    display: flex;
+}
+
+.search-nav-bar .clint-buttons a {
+    color: var(--text-primary);
+    text-decoration: none;
+}
+
+.search-nav-bar .clint-buttons .recomend {
+    margin-left: 20px;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    border-bottom: 2px solid transparent;
+}
+
+.search-nav-bar .clint-buttons .recomend:hover {
+    border-bottom: 2px solid var(--high-light);
+}
+
+.search-nav-bar .profile-button {
+    cursor: pointer;
+}
+
+.profile-information {
+    width: 200px;
+    height: 0px;
+    background: var(--gray-borders);
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+    margin-top: 60px;
+    right: 20px;
+    overflow: hidden;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.profile-information .back-button {
+    cursor: default;
+    padding-left: 10px;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    border-left: 5px solid transparent;
+}
+
+.profile-information .back-button:hover {
+    background-color: var(--muted-dark);
+    border-left: 5px solid var(--high-light);
+}
+
+.profile-information .back-button span {
+    display: flex;
+    align-items: center;
+}
+
+
+.side-menu-hidden {
+    position: fixed;
+    z-index: 999;
+    width: 0%;
+    height: 100%;
+    background: var(--gray-borders);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.4s ease-in-out;
+}
+
+
+.side-menu-hidden .center-items .each-center-item {
+    margin-top: 10px;
+}
+
+.side-menu-hidden .center-items .each-center-item {
+    border-bottom: 5px solid var(--high-light);
+    height: 40px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    width: 250px;
+    background-color: rgba(0, 0, 0, 0.103);
+}
+
+.side-menu-hidden .center-items .each-center-item span {
+    font-size: 18px;
+}
+
+.search-nav-bar .hidden-profile-button {
+    display: none;
+}
+
+
+@media (max-width:1180px) {
+    .search-nav-bar .clint-buttons {
+        display: none;
+    }
+
+    .search-nav-bar .profile-button {
+        display: none;
+    }
+
+    .search-nav-bar .hidden-profile-button {
+        display: block;
+    }
+
+}
+
+@media (max-width:692px) {
+    .search-nav-bar .search-box input {
+        width: 300px;
+    }
+
+    .search-nav-bar .search-box {
+        width: 300px;
+    }
+}
+
+@media(max-width:358px) {
+    .search-nav-bar .search-box input {
+        width: 100px;
+    }
+
+    .search-nav-bar .search-box {
+        width: 200px
+    }
+}
+
+.tv-show-header {
+    padding-top: 90px;
+    padding-left: 30px;
+}
+
+.tv-show-header .left-border {
+    border-left: 4px solid var(--high-light);
+    width: 60%;
+    padding-left: 10px;
+}
+
+.search-around .recomended-videos {
+    margin-top: 70px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    position: absolute;
+}
+
+.search-around .recomended-videos .reco-card-info {
+    width: 330px;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+.search-around .recomended-videos .reco-card-info img {
+    height: 450px;
+    width: 330px;
+    object-fit: cover;
+    filter: brightness(60%);
+    transition: 0.3s ease-in-out;
+}
+
+.search-around .recomended-videos .reco-card-info .absolute-postion {
+    position: absolute;
+    width: 330px;
+    height: 450px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.856));
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position-y: 400px;
+    z-index: 1;
+    transition: 0.4s ease-in-out;
+    border-radius: 20px;
+}
+
+.search-around .recomended-videos .reco-card-info .absolute-postion i {
+    font-size: 45px;
+}
+
+.search-around .recomended-videos .reco-card-info .absolute-postion .ab-items {
+    text-align: center;
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+}
+
+.search-around .recomended-videos .reco-card-info:hover .absolute-postion {
+    background-position-y: 0px;
+}
+
+.search-around .recomended-videos .reco-card-info .absolute-postion:hover .ab-items {
+    opacity: 1;
+}
+
+.search-around .recomended-videos .reco-card-info:hover img {
+    scale: 1.07;
+}

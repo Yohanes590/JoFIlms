@@ -1,0 +1,96 @@
+.tv-show-componet {
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+    scroll-snap-align: end;
+    flex: 0 0 300px;
+}
+
+.tv-show-componet .header-part {
+    margin-left: 50px;
+    border-left: 4px solid var(--primary-color);
+    padding-left: 20px;
+}
+
+.tv-show-componet .tv-show-cards {
+    width: 80%;
+    padding-top: 100px;
+    margin: auto;
+}
+
+.tv-show-componet .tv-show-cards .each-tv-card {
+    width: 300px;
+    height: 750px;
+    overflow: hidden;
+    border-bottom: 10px solid var(--primary-color);
+    border-radius: 10px;
+    background-image: linear-gradient(var(--text-primary), var(--text-primary));
+    background-repeat: no-repeat;
+    background-position-x: 500px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.836);
+    cursor: default;
+    transition: 0.6s ease-in-out;
+}
+
+.tv-show-componet .tv-show-cards .each-tv-card:hover {
+    background-position: 0;
+    color: black;
+}
+
+
+.tv-show-componet .tv-show-cards .each-tv-card .image img {
+    width: 300px;
+    filter: brightness(50%);
+    transition: 0.5s ease-in-out;
+}
+
+.tv-show-componet .tv-show-cards .each-tv-card .tv-discription {
+    padding-left: 10px;
+}
+
+
+.tv-show-componet .tv-show-cards .each-tv-card .tv-discription p {
+    height: 90px;
+    overflow: hidden;
+}
+
+.tv-show-componet .tv-show-cards .each-tv-card .tv-discription button {
+    width: 200px;
+    height: 40px;
+    background-color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+}
+
+.tv-show-componet .tv-show-cards .each-tv-card .absoute-button {
+    position: absolute;
+    z-index: 1;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scale: 0;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.tv-show-componet .tv-show-cards .each-tv-card .tv-discription button:hover {
+    scale: 1.05;
+    width: 280px
+}
+
+.tv-show-componet .tv-show-cards .each-tv-card:hover img {
+    filter: brightness(100%);
+}
+
+.tv-show-componet .tv-show-cards .each-tv-card:hover .absoute-button {
+    scale: 1.8;
+    color: white
+}

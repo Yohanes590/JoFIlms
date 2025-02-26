@@ -1,0 +1,73 @@
+.recomened {
+    width: 100%;
+    height: auto;
+}
+
+
+
+.reco-line .left-line {
+    border-left: 5px solid var(--primary-color);
+    padding-left: 10px;
+}
+
+.recomened .recomended-card {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    overflow-y: scroll;
+    overflow-x: none;
+    height: 500px;
+
+}
+
+
+.recomened .recomended-card .reco-card {
+    display: flex;
+    align-items: center;
+    width: 450px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: var(--dark-card-background);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.767);
+    margin-top: 20px;
+    border-bottom: 5px solid transparent;
+    transition: 0.4s ease-in-out;
+    cursor: default;
+}
+
+.recomened .recomended-card .reco-card:hover {
+    border-bottom: 5px solid var(--primary-color);
+    scale: 1.1;
+}
+
+.recomened .recomended-card .reco-card img {
+    width: 100px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.recomened .recomended-card .reco-card .dscription {
+    margin-left: 30px;
+}
+
+.recomened .recomended-card .reco-card .dscription button {
+    display: flex;
+    margin-top: 10px;
+    width: 230px;
+    height: 35px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background: var(--primary-color);
+    color: white;
+    border: 2px solid var(--primary-color);
+    transition: 0.3s ease-in-out;
+}
+
+.recomened .recomended-card .reco-card .dscription button:hover {
+    background: rgba(189, 0, 0, 0.733);
+    border: 1px solid rgba(189, 0, 0, 0.733);
+    width: 200px;
+}

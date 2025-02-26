@@ -1,0 +1,52 @@
+.loading-animation {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    background: var(--muted-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+    width: 60px;
+    border-radius: 5px;
+    aspect-ratio: 1;
+    background:
+        linear-gradient(45deg, #00AAFF 50%, #0000 0),
+        linear-gradient(-45deg, #ffffff 50%, #0000 0),
+        linear-gradient(45deg, #0000 50%, #ffd000 0),
+        linear-gradient(-45deg, #0000 50%, #ff0000 0),
+        #00AAFF;
+    background-size: 200% 200%;
+    background-repeat: no-repeat;
+    animation: l3 2.5s infinite;
+}
+
+@keyframes l3 {
+    0% {
+        background-position: 100% 0, 0 0, 0 100%, 100% 100%
+    }
+
+    15%,
+    25% {
+        background-position: 100% 0, 0 0, 0 100%, 0 0
+    }
+
+    40%,
+    50% {
+        background-position: 100% 0, 0 0, 100% 0, 0 0
+    }
+
+    65%,
+    75% {
+        background-position: 100% 0, 100% 100%, 100% 0, 0 0
+    }
+
+    90%,
+    100% {
+        background-position: 0 100%, 100% 100%, 100% 0, 0 0
+    }
+}

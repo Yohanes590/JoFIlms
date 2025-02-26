@@ -1,0 +1,78 @@
+.feauter-section {
+    width: 100%;
+    height: auto;
+}
+
+.feauter-section .card-section-flex-part {
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+
+.feauter-section .card-section-flex-part .card-section {
+    margin-top: 40px;
+    width: 300px;
+    height: 0%;
+    overflow: hidden;
+    border: 2px solid var(--muted-gold);
+    box-shadow: 0px 0px 10px var(--muted-gold);
+    border-radius: 5px;
+    cursor: pointer;
+    perspective: 1500px;
+    transition: all 0.6s ease-in-out;
+    text-align: center;
+    transform: matrix3d(0, 100, 100);
+}
+
+.feauter-section .card-section-flex-part .card-section:hover {
+    box-shadow: 0 15px 10px var(--text-primary);
+    border-color: var(--text-primary);
+    background: var(--dark-card-background);
+    height: 100%;
+    transition: all 0.6s ease-in-out;
+}
+
+.feauter-section .card-section-flex-part .card-section:hover .discription-part h2 {
+    background-position-x: 400px;
+    width: 100%;
+    border-radius: 10px 0px 0px 0px;
+}
+
+.feauter-section .card-section-flex-part .card-section:hover .film-poster img {
+    filter: brightness(100%);
+}
+
+.feauter-section .card-section-flex-part .card-section .film-poster img {
+    width: 300px;
+    filter: brightness(50%);
+    transition: 0.4s ease-in-out;
+}
+
+.feauter-section .card-section-flex-part .card-section .discription-part button {
+    width: 200px;
+    height: 35px;
+    background-color: var(--muted-gold);
+    border: 2px solid var(--muted-gold);
+    color: white;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.feauter-section .card-section-flex-part .card-section .discription-part button:hover {
+    background-color: var(--text-primary);
+    border: 2px solid var(--text-primary);
+    color: black;
+    box-shadow: 0px 0px 10px var(--text-primary);
+    margin-top: 10px;
+}
+
+.feauter-section .card-section-flex-part .card-section .discription-part h2 {
+    background-image: linear-gradient(var(--muted-gold), var(--muted-gold));
+    background-repeat: no-repeat;
+    background-position-x: 0;
+    width: 100%;
+    border-radius: 0px 20px 20px 0px;
+    transition: 0.4s ease-in-out;
+}

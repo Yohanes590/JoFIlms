@@ -1,0 +1,76 @@
+.sign-up-box {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.911) 100%), url('../assets/banner3.jpg');
+    background-size: cover;
+}
+
+.sign-up-box .box {
+    width: 650px;
+    height: 500px;
+    padding-top: 35px;
+    border: 2px solid var(--muted-gold);
+    box-shadow: 0px 0px 30px var(--muted-gold);
+    backdrop-filter: blur(20px);
+    text-align: center;
+    border-radius: 10px;
+}
+
+.sign-up-box .input-sec {
+    margin-top: 30px;
+    text-align: center;
+    position: absolute;
+}
+
+.sign-up-box .input-sec input {
+    width: 350px;
+    height: 40px;
+    padding-left: 20px;
+    outline: none;
+    background: var(--muted-dark);
+    border: 2px solid var(--primary-color);
+    margin-top: 10px;
+    border-radius: 5px;
+    color: white;
+    transition: 0.4s ease-in-out;
+}
+
+.sign-up-box .input-sec button {
+    border: 2px solid var(--primary-color);
+    background: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    width: 375px;
+    height: 40px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+.sign-up-box .input-sec button:hover {
+    border: 2px solid transparent;
+    background: rgba(255, 0, 0, 0.692);
+}
+
+.sign-up-box .input-sec a {
+    color: var(--high-light);
+}
+
+@media (max-width:400px) {
+    .sign-up-box .input-sec input {
+        width: 70%;
+    }
+
+    .sign-up-box .input-sec button {
+        width: 77%;
+    }
+
+    .sign-up-box .box {
+        width: 95%;
+    }
+}

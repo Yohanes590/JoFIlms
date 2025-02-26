@@ -1,0 +1,57 @@
+.topRated-place {
+    width: 100%;
+    height: auto;
+}
+
+.topRated-place .topRated-header {
+    margin-top: 50px;
+}
+
+.topRated-place .top-rated-card {
+    margin: auto;
+    width: 80%;
+    margin-top: 100px;
+}
+
+.topRated-place .top-rated-card .each-rate-card {
+    width: 350px;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.topRated-place .top-rated-card .each-rate-card img {
+    height: 450px;
+    width: 350px;
+    object-fit: cover;
+    z-index: -1;
+    scale: 1.0;
+    transition: 0.3s ease-in-out;
+    filter: brightness(60%);
+}
+
+.topRated-place .top-rated-card .each-rate-card .play-button {
+    position: absolute;
+    width: 350px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.068), black);
+    background-repeat: no-repeat;
+    background-position-y: 300px;
+    cursor: pointer;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+    z-index: 1;
+}
+
+.topRated-place .top-rated-card .each-rate-card:hover .play-button {
+    opacity: 1;
+    background-position-y: 0px;
+}
+
+.topRated-place .top-rated-card .each-rate-card:hover img {
+    scale: 1.2;
+    filter: brightness(100%);
+}

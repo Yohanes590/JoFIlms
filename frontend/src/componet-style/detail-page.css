@@ -1,0 +1,293 @@
+.detail-page {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.detail-page .flex-poster {
+    padding-top: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.detail-page .flex-poster .film-poster {
+    display: flex;
+    width: 60%;
+    height: 450px;
+    background: var(--muted-dark);
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    cursor: default;
+    border-right: 10px solid var(--primary-color);
+    flex-wrap: wrap;
+}
+
+.detail-page .flex-poster .poster-photo img {
+    height: 450px;
+    width: 350px;
+    object-fit: cover;
+}
+
+.detail-page .flex-poster .poster-title {
+    margin-left: 40px;
+}
+
+.detail-page .flex-poster .poster-title .period {
+    display: flex;
+    margin-top: 20px;
+}
+
+.detail-page .flex-poster .poster-title .period h3 {
+    margin-left: 20px;
+}
+
+.detail-page .flex-poster .poster-title .option-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.detail-page .flex-poster .poster-title .option-buttons #watch-now {
+    width: 200px;
+    height: 40px;
+    background: var(--primary-color);
+    color: white;
+    border: 2px solid var(--primary-color);
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.detail-page .flex-poster .poster-title .option-buttons #watch-now:hover {
+    width: 250px
+}
+
+.detail-page .flex-poster .poster-title .option-buttons #trailer {
+    width: 150px;
+    height: 40px;
+    margin-left: 20px;
+    background: var(--muted-gold);
+    color: white;
+    border: 2px solid var(--muted-gold);
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.detail-page .flex-poster .poster-title .option-buttons #trailer:hover {
+    width: 250px
+}
+
+.detail-page .flex-poster .poster-title #fav-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: var(--high-light);
+    border: 2px solid var(--high-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-left: 20px;
+}
+
+.detail-page .flex-poster .poster-title .middel-bar {
+    margin-top: 20px;
+}
+
+
+.detail-page .flex-poster .poster-title .middel-bar label {
+    margin-left: 20px;
+    background: var(--muted-gold);
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.detail-page .actors-information {
+    width: 600px;
+    height: 450px;
+    background: var(--muted-dark);
+    border-radius: 10px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.detail-page .actors-information .actors-profile-picture .profile-button {
+    display: flex;
+    padding-left: 20px;
+    height: 60px;
+    align-items: center;
+    cursor: default;
+    transition: 0.3s ease;
+}
+
+.detail-page .actors-information .actors-profile-picture .profile-button:hover {
+    background-color: var(--gray-borders);
+}
+
+.detail-page .actors-information .actors-profile-picture .profile {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.detail-page .actors-information .actors-profile-picture .profile img {
+    width: 50px
+}
+
+.detail-page .actors-information .actors-profile-picture .actor-info {
+    margin-left: 15px;
+}
+
+.detail-page .actors-information .profile-heder {
+    padding-left: 20px;
+    background: rgb(39, 39, 39);
+}
+
+@media (max-width:1524px) {
+
+    .detail-page .flex-poster .film-poster {
+        height: auto;
+        justify-content: center;
+    }
+
+    .detail-page .flex-poster .film-poster img {
+        width: 100%;
+        height: 300px;
+        padding-top: 20px;
+        border-radius: 20px;
+    }
+
+    .detail-page .actors-information {
+        margin-top: 50px;
+        width: 90%;
+    }
+
+    .detail-page .flex-poster .film-poster {
+        width: 90%
+    }
+
+    .detail-page .flex-poster .film-poster .period {
+        justify-content: center;
+    }
+
+    .detail-page .film-poster .poster-title {
+        text-align: center;
+    }
+
+}
+
+@media (max-width:511px) {
+    .detail-page .flex-poster .poster-title .option-buttons {
+        justify-content: center;
+    }
+
+    .detail-page .flex-poster .poster-title .option-buttons #watch-now {
+        width: 90%;
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+
+    .detail-page .flex-poster .poster-title .option-buttons #trailer {
+        width: 75%;
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+
+    .detail-page .flex-poster .poster-title .option-buttons #fav-icon {
+        scale: 1.4;
+        margin-top: 30px;
+    }
+
+    .detail-page .flex-poster .poster-title {
+        margin-left: 0px;
+    }
+}
+
+.recomendation {
+    margin-top: 40px;
+    padding-left: 20px;
+    width: 100%;
+    height: auto;
+}
+
+.recomendation .flex-recomended {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+.recomendation .flex-recomended .reco-box-one {
+    display: flex;
+    width: 500px;
+    height: 120px;
+    background: var(--gray-borders);
+    overflow: hidden;
+    border-radius: 10px;
+    align-items: center;
+    border-left: 5px solid var(--primary-color);
+    transition: 0.3s ease;
+    margin-top: 20px;
+}
+
+.recomendation .flex-recomended .reco-box-one:hover {
+    background: var(--muted-dark);
+}
+
+.recomendation .flex-recomended .reco-box-one .reco-title {
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.recomendation .flex-recomended .reco-box-one .reco-poster-pic img {
+    width: 150px;
+    height: 130px;
+    transition: 0.5s ease;
+    object-fit: cover;
+}
+
+.recomendation .flex-recomended .reco-box-one:hover img {
+    width: 130px;
+    filter: brightness(70%);
+}
+
+@media (max-width:536px) {
+    .recomendation {
+        padding-left: 0px;
+    }
+
+    .detail-page .actors-information .actors-profile-picture .actor-info {
+        margin-left: 15px;
+    }
+
+    .recomendation .flex-recomended .reco-box-one {
+        width: 85%;
+    }
+}
+
+.movieFrame {
+    position: fixed;
+    z-index: 999;
+    background-color: rgba(128, 128, 128, 0.438);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.movieFrame .center-item .close {
+    position: absolute;
+    right: 100px;
+    font-size: 40px;
+    cursor: pointer;
+    margin-top: -150px;
+}
